@@ -12,7 +12,7 @@ def home(request):
         amount = 50000
 
         client = razorpay.Client(
-            auth=("rzp_test_mjXA0VETXtsAIO", "9gXWX93qxhimu7XhuGZd9lS1"))
+            auth=("", "")) #secret key and product id
 
         payment = client.order.create({'amount': amount, 'currency': 'INR',
                                        'payment_capture': '1'})
